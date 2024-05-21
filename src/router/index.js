@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignOut from '../views/admin/signout.vue'
+import agenda from '../views/members/agenda.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/signout',
       name: 'signOut',
       component: SignOut
+    },
+    {
+      path: '/agenda',
+      name: 'agenda',
+      component: agenda
     },
   ]
 })
